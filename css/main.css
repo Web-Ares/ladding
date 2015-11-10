@@ -60,9 +60,9 @@
 }
 .site__content {
     position: relative;
-    max-width: 1085px;
-    min-width: 320px;
+    width: 320px;
     margin: 0 auto;
+    overflow: hidden;
     z-index: 2;
 }
 .site__footer {
@@ -77,7 +77,7 @@
 
 /* -------------- content -------------- */
 .content{
-    float: right;
+
 }
 /* ------------- /content -------------- */
 
@@ -92,8 +92,8 @@
 
 /* --------------- callback --------------- */
 .callback{
-    float: left;
     width: 285px;
+    margin: 0 auto;
 }
 .callback-phone{
     position: relative;
@@ -139,6 +139,7 @@
     max-width:252px;
 }
 /* --------------- /callback --------------- */
+
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
@@ -185,12 +186,14 @@
     /* --------------- /feedback --------------- */
 
     /* --------------- site --------------- */
+    .site__content {
+        width: 768px;
+    }
     .site__header{
         margin-bottom: 20px;
         padding-top: 40px;
     }
     .site__header-layout{
-        width: 740px;
         padding: 57px 0 62px;
         font-size: 33px;
         background-size: 390px 45px;
@@ -209,12 +212,23 @@
     /* -------------- content -------------- */
     .content{
         float: right;
-        width: 740px;
     }
     /* ------------- /content -------------- */
+
+    /* -------------- callback ------------- */
+    .callback {
+        float: left;
+    }
+    /* ------------ /callback -------------- */
 }
 
 @media (min-width: 1024px) {
+    /* --------------- site --------------- */
+    .site__content {
+        width: 1085px;
+    }
+    /* -------------- /site --------------- */
+
     .site__content__feedback{
         height: 345px;
     }
