@@ -14,12 +14,15 @@
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
     color: #000;
+    text-align: center;
 }
 :-moz-placeholder {
     color: #000;
+    text-align: center;
 }
 .placeholder {
     color: #000;
+    text-align: center;
 }
 /* --------------- /placeholder --------------- */
 
@@ -90,14 +93,15 @@
     background: url("../img/phonebg.png") no-repeat top;
     color: #fff;
     font-size: 26px;
-    padding: 27px 33px 46px 33px;
+    padding: 27px 33px 65px 33px;
     text-align: center;
     background-size: 100% 100%;
-    margin-bottom: 76px;
+    margin-bottom: 55px;
 }
 .callback-phone .callback-work{
     font-size: 22px;
     display: block;
+    margin-top: 9px;
 }
 .callback-phone .callback-work > span{
     font-size: 20px;
@@ -112,6 +116,16 @@
     text-align: center;
     color: #ffffff;
     padding: 10px 15px;
+    padding-top: 6px;
+    margin-bottom: 87px;
+    padding-bottom: 2px;
+
+}
+.callback-contact span{
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
 }
 .callback-contact:before{
     content: url('../img/contactbg.png');
@@ -123,10 +137,38 @@
 .callback-contact strong{
     display: block;
     color: #000000;
+    margin-top: 16px;
+    font-size: 28px;
 }
 .callback .feedback-form{
-    margin:0 auto;
-    max-width:252px;
+    margin: 0 auto;
+    max-width: 252px;
+    margin-top: 19px;
+}
+.callback .feedback-name{
+    width: 252px;
+    height: 45px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    padding: 0 10px;
+    text-align: center;
+}
+.feedback-submit{
+    position: absolute;
+    width: 248px;
+    font-size: 20px;
+    height: 48px;
+    background-color: #bf583f;
+    margin-top: 12px;
+    color: #fff;
+    border: none;
+    left: 50%;
+    margin-left: -127px;
+    box-shadow: 3px 3px 0 #8f4346;
+}
+
+.feedback-submit .placeholder{
+        font-size: 28px;
 }
 /* --------------- /callback --------------- */
 /* --------------- logo --------------- */
