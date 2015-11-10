@@ -14,15 +14,12 @@
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
     color: #000;
-    text-align: center;
 }
 :-moz-placeholder {
     color: #000;
-    text-align: center;
 }
 .placeholder {
     color: #000;
-    text-align: center;
 }
 /* --------------- /placeholder --------------- */
 
@@ -63,9 +60,8 @@
 }
 .site__content {
     position: relative;
-    width: 320px;
+    min-width: 320px;
     margin: 0 auto;
-    overflow: hidden;
     z-index: 2;
 }
 .site__footer {
@@ -77,13 +73,6 @@
     height: 100px;
 }
 /* --------------- /site --------------- */
-
-/* -------------- content -------------- */
-.content{
-
-}
-/* ------------- /content -------------- */
-
 /* --------------- site__content__feedback --------------- */
 .site__content__feedback{
     width: 100%;
@@ -91,99 +80,23 @@
     padding: 0 0 1px 0;
     margin-top: 232px;
 }
-/* --------------- /site__content__feedback --------------- */
-
-/* --------------- callback --------------- */
-.callback{
-    width: 285px;
-    margin: 0 auto;
-}
-.callback-phone{
+.feedback-title{
+    line-height: 31px;
+    font-size: 27px;
+    padding-top: 39px;
+    display: block;
+    width: 320px;
+    height: 100%;
+    overflow: hidden;
     position: relative;
-    background: url("../img/phonebg.png") no-repeat top;
-    color: #fff;
-    font-size: 26px;
-    padding: 27px 33px 65px 33px;
-    text-align: center;
-    background-size: 100% 100%;
-    margin-bottom: 55px;
-}
-.callback-phone .callback-work{
-    font-size: 22px;
-    display: block;
-    margin-top: 9px;
-}
-.callback-phone .callback-work > span{
-    font-size: 20px;
-    display: block;
-}
-.callback-contact{
-    background-color: #bf595d;
-    position: relative;
-    opacity: 0.7;
-    font-size: 23px;
-    font-weight: bold;
-    text-align: center;
-    color: #ffffff;
-    padding: 10px 15px;
-    padding-top: 6px;
-    margin-bottom: 87px;
-    padding-bottom: 2px;
-
-}
-.callback-contact span{
-    display: block;
-    font-size: 20px;
-    font-weight: normal;
-    margin-top: 10px;
-}
-.callback-contact:before{
-    content: url('../img/contactbg.png');
-    position: absolute;
-    top: -72px;
-    left: 50%;
-    margin-left: -143px;
-}
-.callback-contact strong{
-    display: block;
-    color: #000000;
-    margin-top: 16px;
-    font-size: 28px;
-}
-.callback .feedback-form{
     margin: 0 auto;
-    max-width: 252px;
-    margin-top: 19px;
-}
-.callback .feedback-name{
-    width: 252px;
-    height: 45px;
-    margin-bottom: 15px;
-    font-size: 17px;
-    padding: 0 10px;
+    background: url("../img/thanks-border.png") no-repeat center;
+    background-size: contain;
     text-align: center;
-}
-.feedback-submit{
-    position: absolute;
-    width: 248px;
-    font-size: 20px;
-    height: 48px;
-    background-color: #bf583f;
-    margin-top: 12px;
-    color: #fff;
-    border: none;
-    left: 50%;
-    margin-left: -127px;
-    box-shadow: 3px 3px 0 #8f4346;
-}
 
-.feedback-submit .placeholder{
-        font-size: 28px;
 }
-/* --------------- /callback --------------- */
-
-/* --------------- logo --------------- */
-.logo {
+.site__content__feedback:before {
+    content: '';
     position: absolute;
     background: url("../img/thanks-border_after.png") no-repeat center;
     background-size: contain;
@@ -205,7 +118,60 @@
     margin-left: -5px;
 }
 
+/* --------------- /site__content__feedback --------------- */
+/* --------------- callback --------------- */
+.callback{
+    width: 285px;
+}
+.callback-phone{
+    position: relative;
+    background: url("../img/phonebg.png") no-repeat top;
+    color: #fff;
+    font-size: 26px;
+    padding: 27px 33px 46px 33px;
+    text-align: center;
+    background-size: 100% 100%;
+    margin-bottom: 76px;
+}
+.callback-phone .callback-work{
+    font-size: 22px;
+    display: block;
+}
+.callback-phone .callback-work > span{
+    font-size: 20px;
+    display: block;
+}
+.callback-contact{
+    background-color: #bf595d;
+    position: relative;
+    height: 400px;
+    opacity: 0.8;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+.callback-contact:before{
+    content: url('../img/contactbg.png');
+    position: absolute;
+    top: -72px;
+    left: 50%;
+    margin-left: -143px;
+}
+.callback-contact strong{
+    display: block;
+    color: #000000;
+}
+.callback .feedback-form{
+    margin:0 auto;
+    max-width:252px;
+}
+/* --------------- /callback --------------- */
+
+
 @media (min-width: 768px) {
+
     /* --------------- feedback --------------- */
     .site__content__feedback{
         height: 249px;
@@ -228,14 +194,12 @@
     /* --------------- /feedback --------------- */
 
     /* --------------- site --------------- */
-    .site__content {
-        width: 768px;
-    }
     .site__header{
         margin-bottom: 20px;
         padding-top: 40px;
     }
     .site__header-layout{
+        width: 740px;
         padding: 57px 0 62px;
         font-size: 33px;
         background-size: 390px 45px;
@@ -249,28 +213,13 @@
     .site__header-eng{
         font-size: 34px;
     }
-    /* --------------- /site --------------- */
-
-    /* -------------- content -------------- */
-    .content{
-        float: right;
+    .site__content{
+        width: 740px;
     }
-    /* ------------- /content -------------- */
-
-    /* -------------- callback ------------- */
-    .callback {
-        float: left;
-    }
-    /* ------------ /callback -------------- */
+    /* --------------- site --------------- */
 }
 
 @media (min-width: 1024px) {
-    /* --------------- site --------------- */
-    .site__content {
-        width: 1085px;
-    }
-    /* -------------- /site --------------- */
-
     .site__content__feedback{
         height: 345px;
     }
