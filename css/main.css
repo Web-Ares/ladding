@@ -29,7 +29,7 @@
 /* --------------- site --------------- */
 .site {
     min-height: 100%;
-    min-width: 1000px;
+    min-width: 320px;
     overflow: hidden;
     position: relative;
     background: url("../img/bg-body.jpg") no-repeat center;
@@ -39,16 +39,19 @@
 .site__header{
     width: 320px;
     margin: 0 auto;
+    padding: 65px 0 62px
     font-size: 33px;
     background: url("../img/bg-header-top.png") no-repeat 50% 0/100% auto,
     url("../img/bg-header-bottom.png") no-repeat 50% 100%/100% auto;
     text-align: center;
 }
 .site__header h1{
-    font-size: 64px;
+    margin-bottom: 9px;
+    font-size: 70px;
 }
 .site__header span{
     display: block;
+    margin-bottom: 12px;
 }
 .site__header-eng{
     direction: ltr;
@@ -73,12 +76,13 @@
     .site__header{
         width: 740px;
         font-size: 33px;
+        background-size: 390px 45px;
     }
     .site__header h1{
         font-size: 64px;
     }
     .site__header-eng{
-        font-size: 32px;
+        font-size: 34px;
     }
     /* --------------- site --------------- */
 }
