@@ -80,6 +80,7 @@
     padding: 27px 33px 46px 33px;
     text-align: center;
     background-size: 100% 100%;
+    margin-bottom: 76px;
 }
 .callback-phone .callback-work{
     font-size: 22px;
@@ -89,7 +90,32 @@
     font-size: 20px;
     display: block;
 }
-
+.callback-contact{
+    background-color: #bf595d;
+    position: relative;
+    height: 400px;
+    opacity: 0.8;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+.callback-contact:before{
+    content: url('../img/contactbg.png');
+    position: absolute;
+    top: -72px;
+    left: 50%;
+    margin-left: -143px;
+}
+.callback-contact strong{
+    display: block;
+    color: #000000;
+}
+.callback .feedback-form{
+    margin:0 auto;
+    max-width:252px;
+}
 /* --------------- /callback --------------- */
 
 
