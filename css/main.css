@@ -60,6 +60,7 @@
 }
 .site__content {
     position: relative;
+    max-width: 1085px;
     min-width: 320px;
     margin: 0 auto;
     z-index: 2;
@@ -73,6 +74,13 @@
     height: 100px;
 }
 /* --------------- /site --------------- */
+
+/* -------------- content -------------- */
+.content{
+    float: right;
+}
+/* ------------- /content -------------- */
+
 /* --------------- site__content__feedback --------------- */
 .site__content__feedback{
     width: 100%;
@@ -80,9 +88,11 @@
     padding: 0 0 1px 0;
     margin-top: 232px;
 }
-/* --------------- /site --------------- */
+/* --------------- /site__content__feedback --------------- */
+
 /* --------------- callback --------------- */
 .callback{
+    float: left;
     width: 285px;
 }
 .callback-phone{
@@ -152,10 +162,7 @@
     margin-left: -5px;
 }
 
-/* --------------- /site__content__feedback --------------- */
-
 @media (min-width: 768px) {
-
     /* --------------- feedback --------------- */
     .site__content__feedback{
         height: 249px;
@@ -197,10 +204,14 @@
     .site__header-eng{
         font-size: 34px;
     }
-    .site__content{
+    /* --------------- /site --------------- */
+
+    /* -------------- content -------------- */
+    .content{
+        float: right;
         width: 740px;
     }
-    /* --------------- site --------------- */
+    /* ------------- /content -------------- */
 }
 
 @media (min-width: 1024px) {
