@@ -33,7 +33,26 @@
     overflow: hidden;
     position: relative;
     background: url("../img/bg-body.jpg") no-repeat center;
+    direction: rtl;
     z-index: 1;
+}
+.site__header{
+    width: 320px;
+    margin: 0 auto;
+    font-size: 33px;
+    background: url("../img/bg-header-top.png") no-repeat 50% 0/100% auto,
+    url("../img/bg-header-bottom.png") no-repeat 50% 100%/100% auto;
+    text-align: center;
+}
+.site__header h1{
+    font-size: 64px;
+}
+.site__header span{
+    display: block;
+}
+.site__header-eng{
+    direction: ltr;
+    font-size: 32px;
 }
 .site__content {
     position: relative;
@@ -50,7 +69,18 @@
 /* --------------- /site --------------- */
 
 @media (min-width: 768px) {
-
+    /* --------------- site --------------- */
+    .site__header{
+        width: 740px;
+        font-size: 33px;
+    }
+    .site__header h1{
+        font-size: 64px;
+    }
+    .site__header-eng{
+        font-size: 32px;
+    }
+    /* --------------- site --------------- */
 }
 
 @media (min-width: 1024px) {
