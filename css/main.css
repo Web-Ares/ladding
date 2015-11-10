@@ -6,11 +6,8 @@
 /*
     main styles
     version: 10.11.2015
-
     placeholder
-
     site
-
     logo
 */
 
@@ -29,31 +26,43 @@
 /* --------------- site --------------- */
 .site {
     min-height: 100%;
-    min-width: 1000px;
+    min-width: 320px;
     overflow: hidden;
     position: relative;
     background: url("../img/bg-body.jpg") no-repeat center;
+    direction: rtl;
     z-index: 1;
 }
-.site:after {
-    content: '';
+.site__header{
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+.site__header-layout{
+    width: 320px;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: 20px;
+    background: url("../img/bg-header-top.png") no-repeat 50% 0/100% auto,
+    url("../img/bg-header-bottom.png") no-repeat 50% 100%/100% auto;
+    text-align: center;
+}
+.site__header h1{
+    margin-bottom: 9px;
+    font-size: 64px;
+}
+.site__header span{
     display: block;
-    clear: both;
-    width: 100%;
-
-    height: 100px;
+    margin-bottom: 12px;
+}
+.site__header-eng{
+    direction: ltr;
 }
 .site__content {
     position: relative;
+    min-width: 320px;
+    margin: 0 auto;
     z-index: 2;
-}
-.site__header {
-    position: relative;
-
-    height: 100px;
-    background: red;
-    z-index: 3;
-
 }
 .site__footer {
     z-index: 2;
@@ -63,26 +72,161 @@
     bottom: 0;
     height: 100px;
 }
-.site__footer-layout {
-    width: 100%;
-
-    height: 100px;
-    background: blue;
-}
 /* --------------- /site --------------- */
-
-/* --------------- logo --------------- */
-.logo {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* --------------- site__content__feedback --------------- */
+.site__content__feedback{
+    width: 100%;
+    height: 142px;
+    padding: 0 0 1px 0;
+    margin-top: 232px;
 }
-/* --------------- /logo --------------- */
+.feedback-title{
+    line-height: 31px;
+    font-size: 27px;
+    padding-top: 39px;
+    display: block;
+    width: 320px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    background: url("../img/thanks-border.png") no-repeat center;
+    background-size: contain;
+    text-align: center;
+
+}
+.site__content__feedback:before {
+    content: '';
+    position: absolute;
+    background: url("../img/thanks-border_after.png") no-repeat center;
+    background-size: contain;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-right: -5px;
+    right: 50%;
+}
+.site__content__feedback:after {
+    content: '';
+    position: absolute;
+    background: url("../img/thanks-border_before.png") no-repeat center;
+    background-size: contain;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    margin-left: -5px;
+}
+
+/* --------------- /site__content__feedback --------------- */
+/* --------------- callback --------------- */
+.callback{
+    width: 285px;
+}
+.callback-phone{
+    position: relative;
+    background: url("../img/phonebg.png") no-repeat top;
+    color: #fff;
+    font-size: 26px;
+    padding: 27px 33px 46px 33px;
+    text-align: center;
+    background-size: 100% 100%;
+    margin-bottom: 76px;
+}
+.callback-phone .callback-work{
+    font-size: 22px;
+    display: block;
+}
+.callback-phone .callback-work > span{
+    font-size: 20px;
+    display: block;
+}
+.callback-contact{
+    background-color: #bf595d;
+    position: relative;
+    height: 400px;
+    opacity: 0.8;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+.callback-contact:before{
+    content: url('../img/contactbg.png');
+    position: absolute;
+    top: -72px;
+    left: 50%;
+    margin-left: -143px;
+}
+.callback-contact strong{
+    display: block;
+    color: #000000;
+}
+.callback .feedback-form{
+    margin:0 auto;
+    max-width:252px;
+}
+/* --------------- /callback --------------- */
+
 
 @media (min-width: 768px) {
 
+    /* --------------- feedback --------------- */
+    .site__content__feedback{
+        height: 249px;
+    }
+    .feedback-title{
+        background-size: cover;
+        line-height: 55px;
+        padding-top: 67px;
+        font-size: 51px;
+        width: 500px;
+    }
+    .site__content__feedback:before{
+        background-size: cover;
+        margin-right: 260px;
+    }
+    .site__content__feedback:after{
+        background-size: cover;
+        margin-left: 260px;
+    }
+    /* --------------- /feedback --------------- */
+
+    /* --------------- site --------------- */
+    .site__header{
+        margin-bottom: 20px;
+        padding-top: 40px;
+    }
+    .site__header-layout{
+        width: 740px;
+        padding: 57px 0 62px;
+        font-size: 33px;
+        background-size: 390px 45px;
+    }
+    .site__header:before{
+        height: 40px;
+    }
+    .site__header h1{
+        font-size: 74px;
+    }
+    .site__header-eng{
+        font-size: 34px;
+    }
+    .site__content{
+        width: 740px;
+    }
+    /* --------------- site --------------- */
 }
 
 @media (min-width: 1024px) {
-
+    .site__content__feedback{
+        height: 345px;
+    }
+    .feedback-title{
+        width: 700px;
+        line-height: 63px;
+        padding-top: 115px;
+        font-size: 51px;
+    }
 }
