@@ -78,3 +78,29 @@
     left: 0;
 }
 /* --------------- /logo --------------- */
+
+/* --------------- callback --------------- */
+.callback{
+    width: 285px;
+}
+.callback-phone{
+    position: relative;
+    background: url("../img/phonebg.png") no-repeat top;
+    color: #fff;
+    font-size: 26px;
+    padding: 27px 33px 46px 33px;
+    text-align: center;
+    background-size: 100% 100%;
+}
+.callback-phone .callback-work{
+    font-size: 22px;
+    display: block;
+}
+.callback-phone .callback-work > span{
+    font-size: 20px;
+    display: block;
+}
+
+/* --------------- /callback --------------- */
+
+
