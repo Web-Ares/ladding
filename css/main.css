@@ -73,19 +73,21 @@
     height: 100px;
 }
 /* --------------- /site --------------- */
+
 /* --------------- site__content__feedback --------------- */
 .site__content__feedback{
+    position: relative;
     width: 100%;
-    height: 142px;
+    height: 132px;
     padding: 0 0 1px 0;
-    margin-top: 232px;
+    margin: 160px auto;
 }
 .feedback-title{
     line-height: 31px;
     font-size: 27px;
-    padding-top: 39px;
+    padding-top: 33px;
     display: block;
-    width: 320px;
+    width: 262px;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -93,32 +95,47 @@
     background: url("../img/thanks-border.png") no-repeat center;
     background-size: contain;
     text-align: center;
-
 }
-.site__content__feedback:before {
-    content: '';
+.site__content__feedback:after{
+    content: "";
     position: absolute;
+    width: 600px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -70px;
     background: url("../img/thanks-border_after.png") no-repeat center;
     background-size: contain;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin-right: -5px;
-    right: 50%;
 }
-.site__content__feedback:after {
-    content: '';
+
+.site__content__feedback:before{
+    content: "";
     position: absolute;
+    width: 600px;
+    height: 100%;
+    top: 0;
+    right: 50%;
+    margin-right: -70px;
     background: url("../img/thanks-border_before.png") no-repeat center;
     background-size: contain;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: 0;
-    margin-left: -5px;
 }
 
 /* --------------- /site__content__feedback --------------- */
+
+/* --------------- /site__content__feedback --------------- */
+.site__footer{
+    text-align: right;
+}
+.site__footer ul li{
+    float:right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width:100px;
+    height: 37px;
+    border: 1px solid #bf595d;
+}
+/* --------------- /site__content__feedback --------------- */
+
 /* --------------- callback --------------- */
 .callback{
     width: 285px;
@@ -183,13 +200,11 @@
         font-size: 51px;
         width: 500px;
     }
-    .site__content__feedback:before{
-        background-size: cover;
-        margin-right: 260px;
-    }
     .site__content__feedback:after{
-        background-size: cover;
-        margin-left: 260px;
+        margin-left: 150px;
+     }
+    .site__content__feedback:before{
+        margin-right: 150px;
     }
     /* --------------- /feedback --------------- */
 
@@ -221,12 +236,20 @@
 
 @media (min-width: 1024px) {
     .site__content__feedback{
-        height: 345px;
+        height: 350px;
     }
     .feedback-title{
         width: 700px;
         line-height: 63px;
         padding-top: 115px;
         font-size: 51px;
+    }
+    .site__content__feedback:after {
+        margin-left: 289px;
+        width: 668px;
+    }
+    .site__content__feedback:before {
+        margin-right: 289px;
+        width: 668px;
     }
 }
