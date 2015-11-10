@@ -80,45 +80,7 @@
     padding: 0 0 1px 0;
     margin-top: 232px;
 }
-.feedback-title{
-    line-height: 31px;
-    font-size: 27px;
-    padding-top: 39px;
-    display: block;
-    width: 320px;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-    background: url("../img/thanks-border.png") no-repeat center;
-    background-size: contain;
-    text-align: center;
-
-}
-.site__content__feedback:before {
-    content: '';
-    position: absolute;
-    background: url("../img/thanks-border_after.png") no-repeat center;
-    background-size: contain;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin-right: -5px;
-    right: 50%;
-}
-.site__content__feedback:after {
-    content: '';
-    position: absolute;
-    background: url("../img/thanks-border_before.png") no-repeat center;
-    background-size: contain;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: 0;
-    margin-left: -5px;
-}
-
-/* --------------- /site__content__feedback --------------- */
+/* --------------- /site --------------- */
 /* --------------- callback --------------- */
 .callback{
     width: 285px;
@@ -144,8 +106,7 @@
 .callback-contact{
     background-color: #bf595d;
     position: relative;
-    height: 400px;
-    opacity: 0.8;
+    opacity: 0.7;
     font-size: 23px;
     font-weight: bold;
     text-align: center;
@@ -168,7 +129,30 @@
     max-width:252px;
 }
 /* --------------- /callback --------------- */
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    background: url("../img/thanks-border_after.png") no-repeat center;
+    background-size: contain;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-right: -5px;
+    right: 50%;
+}
+.site__content__feedback:after {
+    content: '';
+    position: absolute;
+    background: url("../img/thanks-border_before.png") no-repeat center;
+    background-size: contain;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    margin-left: -5px;
+}
 
+/* --------------- /site__content__feedback --------------- */
 
 @media (min-width: 768px) {
 
