@@ -19,14 +19,12 @@ if (!empty($_GET)&&!empty($_GET['send_email'])){
 
 
 <!DOCTYPE html>
-<html>
 <html lang="he" dir="rtl">
 <meta charset="utf-8" />
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=1024">
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="address=no">
-
 <title>Title</title>
 <link rel="stylesheet" href="css/main.css" />
 </head>
