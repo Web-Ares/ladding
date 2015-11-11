@@ -71,11 +71,11 @@
 }
 .site__footer {
     z-index: 2;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100px;
+    clear: both;
+}
+.site__footer  span{
+    margin-bottom: 10px;
+    display: block;
 }
 /* --------------- /site --------------- */
 
