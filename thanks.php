@@ -23,7 +23,7 @@ if (!empty($_GET)&&!empty($_GET['send_email'])){
 <html lang="he" dir="rtl">
 <meta charset="utf-8" />
 <meta name="robots" content="noindex, nofollow">
-<meta name="viewport" content="width=1024">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="address=no">
 
