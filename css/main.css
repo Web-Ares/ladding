@@ -151,7 +151,6 @@
     background: url("../img/thanks-border.png") no-repeat center;
     background-size: contain;
     text-align: center;
-
 }
 .site__content__feedback:before {
     content: '';
@@ -177,6 +176,20 @@
 }
 
 /* --------------- /site__content__feedback --------------- */
+
+/* --------------- /site__content__feedback --------------- */
+.site__footer{
+    text-align: right;
+}
+.site__footer ul li{
+    float:right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width:100px;
+    height: 37px;
+}
+/* --------------- /site__content__feedback --------------- */
+
 /* --------------- callback --------------- */
 .callback{
     width: 285px;
@@ -301,6 +314,7 @@
 }
 
 @media (min-width: 768px) {
+
     /* --------------- feedback --------------- */
     .site__content__feedback{
         height: 249px;
