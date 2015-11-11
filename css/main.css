@@ -151,6 +151,7 @@
     font-size: 28px;
 }
 .callback .feedback-form{
+    position: relative;
     margin: 0 auto;
     max-width: 252px;
     margin-top: 19px;
@@ -167,16 +168,21 @@
     position: absolute;
     width: 248px;
     font-size: 20px;
-    height: 48px;
+    height: 44px;
     background-color: #bf583f;
-    margin-top: 12px;
+    bottom: -55px;
     color: #fff;
     border: none;
     left: 50%;
     margin-left: -127px;
     box-shadow: 3px 3px 0 #8f4346;
 }
-
+.feedback-submit ::-webkit-input-placeholder{
+    font-size: 28px;
+}
+.feedback-submit :-moz-placeholder{
+    font-size: 28px;
+}
 .feedback-submit .placeholder{
         font-size: 28px;
 }
