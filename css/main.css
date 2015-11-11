@@ -142,7 +142,7 @@
 }
 .feedback-title{
     line-height: 31px;
-    font-size: 27px;
+    font-size: 22px;
     padding-top: 33px;
     display: block;
     width: 262px;
@@ -165,7 +165,6 @@
     background: url("../img/thanks-border_after.png") no-repeat center;
     background-size: contain;
 }
-
 .site__content__feedback:before{
     content: "";
     position: absolute;
@@ -176,6 +175,7 @@
     margin-right: -70px;
     background: url("../img/thanks-border_before.png") no-repeat center;
     background-size: contain;
+    
 }
 
 /* --------------- /site__content__feedback --------------- */
@@ -229,7 +229,6 @@
     padding-top: 6px;
     margin-bottom: 87px;
     padding-bottom: 2px;
-
 }
 .callback-contact span{
     display: block;
@@ -303,7 +302,7 @@
         background-size: cover;
         line-height: 55px;
         padding-top: 67px;
-        font-size: 51px;
+        font-size: 40px;
         width: 500px;
     }
     .site__content__feedback:after{

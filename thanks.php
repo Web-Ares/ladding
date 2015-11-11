@@ -42,7 +42,6 @@ if (!empty($_GET)&&!empty($_GET['send_email'])){
 
             </div>
             <!--/site__content__feedback-->
-
         </div>
         <!-- /site__content -->
 
