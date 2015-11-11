@@ -32,7 +32,7 @@
     min-width: 320px;
     overflow: hidden;
     position: relative;
-    background: url("../img/bg-body.jpg") no-repeat center;
+    background: url("../img/bg-body.jpg") no-repeat center/cover;
     direction: rtl;
     z-index: 1;
 }
@@ -52,6 +52,7 @@
 .site__header h1{
     margin-bottom: 9px;
     font-size: 64px;
+    line-height: 64px;
 }
 .site__header span{
     display: block;
@@ -304,7 +305,8 @@
     /* -------------- content -------------- */
     .content{
         float: right;
-        width: 470px;
+        width: 455px;
+        margin-left: 15px;
     }
     /* ------------- /content -------------- */
 
@@ -324,7 +326,7 @@
 
     /* -------------- content -------------- */
     .content{
-        width: 790px;
+        width: 775px;
     }
     /* ------------- /content -------------- */
 
