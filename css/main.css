@@ -32,6 +32,7 @@
     min-width: 320px;
     overflow: hidden;
     position: relative;
+    font-family: 'Open Sans', sans-serif;
     background: url("../img/bg-body.jpg") no-repeat center/cover;
     direction: rtl;
     z-index: 1;
@@ -206,7 +207,7 @@
     margin-bottom: 55px;
 }
 .callback-phone .callback-work{
-    font-size: 22px;
+    font-size: 20px;
     display: block;
     margin-top: 9px;
 }

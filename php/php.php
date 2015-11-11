@@ -11,10 +11,10 @@ $message .= "Phone: ".$phone."\r\n";
 
 
 if (mail("alexnikol@e-mail.ua", "Заявка с сайта", $message, $headers)){
-    header("Location: ../thanks.php?send_email=true");
+    header("Location:/thanks.php?send_email=true");
 }
 else{
-    header("Location: ../thanks.php?send_email=false");
+    header("Location:/thanks.php?send_email=false");
 }
 exit;
 ?>
