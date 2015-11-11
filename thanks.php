@@ -32,18 +32,13 @@ if (!empty($_GET)&&!empty($_GET['send_email'])){
 
 <div class="site">
 
-            <!-- site__content -->
-        <div class="site__content">
-
-            <!--site__content__feedback-->
+             <!--site__content__feedback-->
             <div class="site__content__feedback">
 
               <?php echo $send; ?>
 
             </div>
             <!--/site__content__feedback-->
-        </div>
-        <!-- /site__content -->
 
 </div>
 <!--site__wrap-->
