@@ -138,6 +138,56 @@
     padding: 0 0 1px 0;
     margin-top: 232px;
 }
+.feedback-title{
+    line-height: 31px;
+    font-size: 27px;
+    padding-top: 39px;
+    display: block;
+    width: 320px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    background: url("../img/thanks-border.png") no-repeat center;
+    background-size: contain;
+    text-align: center;
+}
+.site__content__feedback:before {
+    content: '';
+    position: absolute;
+    background: url("../img/thanks-border_after.png") no-repeat center;
+    background-size: contain;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-right: -5px;
+    right: 50%;
+}
+.site__content__feedback:after {
+    content: '';
+    position: absolute;
+    background: url("../img/thanks-border_before.png") no-repeat center;
+    background-size: contain;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    margin-left: -5px;
+}
+
+/* --------------- /site__content__feedback --------------- */
+
+/* --------------- /site__content__feedback --------------- */
+.site__footer{
+    text-align: right;
+}
+.site__footer ul li{
+    float:right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width:100px;
+    height: 37px;
+}
 /* --------------- /site__content__feedback --------------- */
 
 /* --------------- callback --------------- */
@@ -262,9 +312,9 @@
     right: 0;
     margin-left: -5px;
 }
-/* --------------- /logo --------------- */
 
 @media (min-width: 768px) {
+
     /* --------------- feedback --------------- */
     .site__content__feedback{
         height: 249px;
@@ -287,9 +337,6 @@
     /* --------------- /feedback --------------- */
 
     /* --------------- site --------------- */
-    .site__content {
-        width: 768px;
-    }
     .site__header{
         margin-bottom: 20px;
         padding-top: 30px;

@@ -34,11 +34,7 @@ if (!empty($_GET)&&!empty($_GET['send_email'])){
 
 <div class="site">
 
-    <!--site__wrap-->
-    <div class="site__wrap">
-
-
-        <!-- site__content -->
+            <!-- site__content -->
         <div class="site__content">
 
             <!--site__content__feedback-->
@@ -51,9 +47,6 @@ if (!empty($_GET)&&!empty($_GET['send_email'])){
 
         </div>
         <!-- /site__content -->
-
-    </div>
-    <!--site__wrap-->
 
 </div>
 <!--site__wrap-->
