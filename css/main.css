@@ -214,6 +214,8 @@
     font-size: 20px;
     display: block;
     margin-top: 9px;
+    color: #fff;
+    cursor: default;
 }
 .callback-phone .callback-work > span{
     font-size: 20px;
@@ -251,6 +253,7 @@
     color: #000000;
     margin-top: 16px;
     font-size: 28px;
+    cursor: default;
 }
 .callback .feedback-form{
     position: relative;
