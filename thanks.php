@@ -29,13 +29,13 @@ if (!empty($_GET)&&!empty($_GET['send_email'])){
 
 <title>Title</title>
 <link rel="stylesheet" href="css/main.css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <div class="site">
 
-            <!-- site__content -->
-        <div class="site__content">
+
 
             <!--site__content__feedback-->
             <div class="site__content__feedback">
@@ -45,8 +45,6 @@ if (!empty($_GET)&&!empty($_GET['send_email'])){
             </div>
             <!--/site__content__feedback-->
 
-        </div>
-        <!-- /site__content -->
 
 </div>
 <!--site__wrap-->
