@@ -6,8 +6,11 @@
 /*
     main styles
     version: 10.11.2015
+
     placeholder
+
     site
+
     logo
 */
 
@@ -26,13 +29,28 @@
 }
 /* --------------- /placeholder --------------- */
 
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Carmelit";
+    src: url("../fonts/carmelitregular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Carmelit Bold";
+    src: url("../fonts/carmelitbold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+
 /* --------------- site --------------- */
 .site {
     min-height: 100%;
     min-width: 320px;
     overflow: hidden;
     position: relative;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Carmelit', sans-serif;
     background: url("../img/bg-body.jpg") no-repeat center/cover;
     direction: rtl;
     z-index: 1;
@@ -226,7 +244,7 @@
     position: relative;
     opacity: 0.7;
     font-size: 23px;
-    font-weight: bold;
+    font-family: 'Carmelit Bold', sans-serif;
     text-align: center;
     color: #ffffff;
     padding: 10px 15px;
@@ -238,7 +256,7 @@
 .callback-contact span{
     display: block;
     font-size: 20px;
-    font-weight: normal;
+    font-family: 'Carmelit', sans-serif;
     margin-top: 10px;
 }
 .callback-contact:before{
