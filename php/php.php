@@ -10,7 +10,7 @@ $message = "Name: ".$name.",\r\n";
 $message .= "Phone: ".$phone."\r\n";
 
 
-if (mail("alexnikol@e-mail.ua", "Заявка с сайта", $message, $headers)){
+if (mail("avivketer@gmail.com", "application", $message, $headers)){
     header("Location:../thanks.php?send_email=true");
 }
 else{
